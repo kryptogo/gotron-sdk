@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/araddon/dateparse v0.0.0-20200409225146-d820a6159ab1
-	github.com/btcsuite/btcd v0.22.1
+	github.com/btcsuite/btcd/btcec/v2 v2.3.2
 	github.com/deckarep/golang-set v1.8.0
 	github.com/ethereum/go-ethereum v1.10.26
 	github.com/fatih/color v1.9.0
@@ -15,19 +15,18 @@ require (
 	github.com/rjeczalik/notify v0.9.3
 	github.com/shengdoushi/base58 v1.0.0
 	github.com/spf13/cobra v1.0.0
-	github.com/stretchr/testify v1.7.2
+	github.com/stretchr/testify v1.8.0
 	github.com/tyler-smith/go-bip39 v1.0.2
 	github.com/zondax/hid v0.9.1
 	go.uber.org/zap v1.15.0
 	golang.org/x/crypto v0.7.0
 	google.golang.org/genproto v0.0.0-20200825200019-8632dd797987
 	google.golang.org/grpc v1.37.0
-	google.golang.org/protobuf v1.28.1
+	google.golang.org/protobuf v1.31.0
 	gopkg.in/yaml.v2 v2.4.0
 )
 
 require (
-	github.com/btcsuite/btcd/btcec/v2 v2.2.0 // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.2 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/decred/dcrd/dcrec/secp256k1/v4 v4.0.1 // indirect
