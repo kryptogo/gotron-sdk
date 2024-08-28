@@ -77,7 +77,7 @@ func TestGetAccount(t *testing.T) {
 
 	tx, err := conn.TriggerConstantContract("",
 		"TBvmoZWgmx3wqvJoDyejSXqWWogy6kCNGp",
-		"statusOf(address)", `[{"address": "TQNKDtPaeSSGhtbDAykLeHEpMpfUYmSuj1"}]`)
+		"statusOf(address)", `[{"address": "TQNKDtPaeSSGhtbDAykLeHEpMpfUYmSuj1"}]`, 0)
 	require.Nil(t, err)
 
 	assert.Equal(t, api.Return_SUCCESS, tx.Result.Code)
@@ -114,7 +114,7 @@ func TestGetAccountMigrationContract(t *testing.T) {
 
 	tx, err := conn.TriggerConstantContract("TX8h6Df74VpJsXF6sTDz1QJsq3Ec8dABc3",
 		"TVoo62PAagTvNvZbB796YfZ7dWtqpPNxnL",
-		"frozenAmount(address)", `[{"address": "TX8h6Df74VpJsXF6sTDz1QJsq3Ec8dABc3"}]`)
+		"frozenAmount(address)", `[{"address": "TX8h6Df74VpJsXF6sTDz1QJsq3Ec8dABc3"}]`, 0)
 	require.Nil(t, err)
 	assert.Equal(t, api.Return_SUCCESS, tx.Result.Code)
 

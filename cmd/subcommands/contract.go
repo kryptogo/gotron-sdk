@@ -151,6 +151,7 @@ func contractSub() []*cobra.Command {
 				addr.String(),
 				args[1],
 				param,
+				0,
 			)
 			if err != nil {
 				return err
